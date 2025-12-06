@@ -6,23 +6,19 @@
 ![License](https://img.shields.io/badge/license-BSD--3--Clause-lightgrey.svg)
 ![Lint](https://img.shields.io/badge/lint-Ruff-black.svg)
 
-Structured data science learning path with data access, manipulation, visualization and ML.<br>
+Data science learning path with data manipulation, visualization, access, and database.<br>
 
 ## Content
 
-| #  | Script                                       |Rigidity| Status| Lint | Topics                                                                |
-|----|----------------------------------------------|:------|:---:|:-:|-----------------------------------------------------------------------------|
-| 01 | [Numpy](./numpy.py)                          |Soft   | ✅  |❌ | Scalars, Arrays, Matrices, ...                                              |
-| 02 | [Pandas](./pandas.py)                        |Med    | ⚠️  |❌ | Series, DataFrame,                                                          |
-| 03 | [Scipy](./scipy.py)                          |Soft   | ⚠️  |❌ |                                                                             |
-| 04 | [Matplotlib](./matplotlib.py)                |Soft   | ✅  |❌ |                                                                             |
-| 05 | [Seaborn](./seaborn.py)                      |Soft   | ❌  |❌ |                                                                             |
-| 06 | [ScikitLearn](./scikit_learn.py)             |Soft   | ⚠️  |❌ |                                                                             |
-| 07 | [PyTorch](./pytorch.py)                      |Firm   | ❌  |❌ |                                                                             |
-| 08 | [Tensorflow](./tensorflow.py)                |Firm   | ❌  |❌ |                                                                             |
-| 09 | [Keras](./keras.py)                          |Soft   | ❌  |❌ |                                                                             |
-| 10 | [FileHandling](./file_handling.py)           |Med    | ❌  |❌ | Read/Write, CSV, JSON, ...                                                  |
-| 11 | [SQL](./sql.py)                              |Med    | ⚠️  |❌ | properties, joins, merges, pyconnector, postgresql, ...                     |
+| #  | Script                                       | Level |Status |Linting| Topics                                                                |
+|----|----------------------------------------------|:-----:|:-----:|:-----:|-----------------------------------------------------------------------|
+| 01 | [Numpy](./numpy.py)                          | Soft  | ✅    | ❌    | Scalars, Arrays, Matrices, ...                                        |
+| 02 | [Pandas](./pandas.py)                        | Med   | ⚠️    | ❌    | Series, DataFrame,                                                    |
+| 03 | [Scipy](./scipy.py)                          | Soft  | ⚠️    | ❌    |                                                                       |
+| 04 | [Matplotlib](./matplotlib.py)                | Soft  | ✅    | ❌    |                                                                       |
+| 05 | [Seaborn](./seaborn.py)                      | Soft  | ❌    | ❌    |                                                                       |
+| 06 | [FileHandling](./file_handling.py)           | Firm  | ❌    | ❌    | Read/Write, CSV, JSON, Parquet, URL, excel, multimodal, ...           |
+| 07 | [SQL](./sql.py)                              | Firm  | ⚠️    | ❌    | properties, joins, merges, pyconnector, postgresql, ...               |
 
 ## Manual
 
