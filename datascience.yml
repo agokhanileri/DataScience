@@ -1,0 +1,35 @@
+name: datascience
+
+channels: [conda-forge]
+channel_priority: strict  # avoids accidental pulls from the default channel
+
+dependencies:   # solver picks latest stable python available
+# Python runtime: format —> lint —> typecheck —> test —> commit
+- python=3.13.*  	  # stdlib(os, math, pathlib, asyncio, etc.) + Cython
+- pip           	  # packaging, runtime
+- setuptools    		#
+- wheel         		#
+- ipython       		# improved REPL
+- black         	  # formatter
+- ruff              # linter
+- mypy          		# type-checker (static)
+- pytest        		# tester
+- pre-commit    		# keeps repo clean by auto-checking during git commits
+- llvm-openmp   	  # multithreading API used by NumPy, SciPy, scikit-learn etc.
+- ninja         		# fast low-level build tool auto-detected by cmake
+- pkg-config    		#
+- cmake         		# C/C++ or Fortran extensions
+# - cython      		# 2D/3D plotting in the IPython console
+- numpy         		# array computing library
+- scipy         		# scientific computing library
+- pandas        		# data analysis library
+- matplotlib    		# 2D/3D plotting library
+- seaborn       		# statistical data visualization library
+- scikit-learn  		# machine learning library
+- jupyter       		# interactive notebooks
+- jupyterlab   		  # next-generation user interface for Jupyter notebooks
+- notebook      		# web-based interactive computing environment
+- plotly        		# interactive graphing library
+- statsmodels  	    # statistical modeling library
+- sympy         		# symbolic mathematics library
+- sqlalchemy    		# SQL toolkit and Object-Relational Mapping (ORM) library
