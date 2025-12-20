@@ -32,7 +32,41 @@ Formatter: black<br>
 
 Execution: line-by-line<br>
 \- Although some scripts may run directly.<br>
+### Run the currency app (local)
 
+A small FastAPI app that provides a single-page USD currency converter is included at `currency/currency.py` with its template in `currency/templates/index.html`. To run it locally:
+
+1. Create and activate a virtual environment (macOS / zsh):
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+2. Install the required packages (minimal set):
+
+```bash
+pip install fastapi uvicorn httpx jinja2 python-multipart
+# or install dev extras if you added them to pyproject: pip install -e .[dev]
+```
+
+3. Start the app (one of the two ways):
+
+- Via uvicorn directly:
+
+```bash
+uvicorn currency.currency:app --reload --port 8000
+```
+
+- Or using the convenience runner included in `scripts`:
+
+```bash
+python scripts/run_currency.py
+```
+
+4. Open the UI at: http://127.0.0.1:8000
+
+- Click **Load currencies** to populate the select input, enter a USD amount and choose a target currency, then click **Convert**. The conversion is saved to a local SQLite database file (`conversions.db`) and a history is shown beneath the form.
 ### Dependencies
 
 Python: v3.12

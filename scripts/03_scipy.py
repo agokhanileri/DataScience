@@ -1,18 +1,9 @@
-import numpy as np        # no need since numpy functions are imported with scipy
-import scipy as sp
-import scipy.io as sio
-# import Plot as plt  # fix this
+import scipy as sp   #  numpy functions are already imported with scipy
+
 
 ### Basics
 arr = np.ones((2, 3))       #
 arr.ndim
-
-from SciPy.cluster.vq import kmeans,vq,whiten
-
-sp.io.savemat('file.mat', {'a': arr})  # savemat expects a dictionary
-%data = spio.loadmat('file.mat')
-%data['a']
-
 
 
 ### Key Packages
@@ -41,5 +32,6 @@ x = np.r_[0:10:0.1]
 plt.plot(x, gamma.pdf(x,2))
 plt.plot(x, gamma.pdf(x,2,3))
 
-
-# lookfor("gaussian", module="scipy") --> can't find lookfor
+sp.io.savemat('file.mat', {'a': arr})  # savemat expects a dictionary
+%data = spio.loadmat('file.mat')
+%data['a']

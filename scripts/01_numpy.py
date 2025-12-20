@@ -1,6 +1,5 @@
 import array as ar
-import numpy as np                      # allows vectorized ops (apply to whole array) and eliminates loops
-# from numpy import *                   # import all --> functions can be called without prefix
+import numpy as np                      # type: ignore, allows vectorized ops (apply to whole array) and eliminates loops
 import math
 
 

@@ -6,14 +6,14 @@ build-backend = "setuptools.build_meta"
 # Specific
 ##########################
 [project]
-name = "datascience"
+name = "datacraft"
 version = "0.8.0"
-description = "Data Science path"
+description = "Data Science"
 readme = "README.md"
 requires-python = ">=3.12"
-license = { text = "BSD-3-Clause" }
+license = { text = "MIT License" }
 authors = [{ name = "Gokhan Ileri" }]
-urls = { Homepage = "https://github.com/agokhanileri/datascience" }
+urls = { Homepage = "https://github.com/agokhanileri/datacraft" }
 classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
@@ -22,6 +22,8 @@ classifiers = [
   "Operating System :: MacOS :: MacOS X"
 ]
 dependencies = [
+  "scikit-learn"  	# machine learning library
+  "statsmodels" 	  # statistical modeling library
   "numpy"         	# array computing library
   "pandas"       		# data analysis library
   "scipy"        		# scientific computing library
@@ -29,15 +31,20 @@ dependencies = [
   "matplotlib"   		# 2D/3D plotting library
   "seaborn"      		# statistical data visualization library
   "plotly"       		# interactive graphing library
-  "jupyter"      		# interactive notebooks
-  "jupyterlab"  		# next-generation user interface for Jupyter notebooks
-  "notebook"     		# web-based interactive computing environment
+  "xlsxwriter"		  # advanced Excel I/O
+  "sqlalchemy"  		# SQL toolkit and ORM
+  "psycopg"        	# PostgreSQL driver for SQLAlchemy
+  "pydantic"      	# data validation and settings management for APIs  "python-multipart" # needed for form parsing in FastAPI  "pyarrow"      		# fast columnar data interchange and Parquet I/O
+  "duckdb" 			    # fast local analytics over Parquet/CSV, integrates with Arrow
   "statsmodels  		# statistical modeling library
   "sqlalchemy"      # database library
+#  "jupyter"      	# interactive notebooks
+#  "jupyterlab"  		# next-generation user interface for Jupyter notebooks
+#  "notebook"   		# web-based interactive computing environment
 ]
 
 [project.optional-dependencies]
-dev = ["black", "ruff", "mypy", "pytest", "pre-commit", "ipython"]
+dev = ["black", "ruff", "mypy", "pytest", "pre-commit", "rich", "ipython"]
 
 # Explicit package discovery (adjust if you use src/ layout)
 [tool.setuptools]
